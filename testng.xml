@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Test practice">
+  <test thread-count="5" name="testng">
+	  <groups>  
+      <run>  
+         <include name="second"/> <!-- there is exclude tag as well, it will execute all the functions except the name of the group given to exclude--> 
+      </run>  
+   </groups>  
+    <classes>
+      <!--class name="testng_pract.Testng_1"/-->
+      <class name="testng_pract.Testng_2"/>
+    </classes>
+  </test> <!-- testng -->
+</suite> <!-- Test practice -->
